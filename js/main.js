@@ -273,9 +273,9 @@ const gamePlay = async () => {
 
   //入力エフェクトを描画
   const drawInputEffect = () => {
-    ctx.layer.fillStyle = effectColor[playData.inputLine];
+    ctx.layer.fillStyle = effectColor[max_class];
     ctx.layer.fillRect(
-      rectRange.width * playData.inputLine + rectRange.leftSpace,
+      rectRange.width * max_class + rectRange.leftSpace,
       0,
       rectRange.width - rectRange.rightSpace,
       cvSize.height
